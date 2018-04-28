@@ -15,7 +15,7 @@ class Application
     else
       resp.write "You Lose"
     end
-    puts"text..........."
+    resp.write puts"text..........."
     resp.finish
   end
 
