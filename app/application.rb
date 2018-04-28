@@ -3,9 +3,9 @@ class Application
   def call(env)
     resp = Rack::Response.new
     resp.write "Hello, People."
-    
-    resp = Rack::Response.new 
-    
+
+    resp = Rack::Response.new
+
     num_1 = Kernel.rand(1..20)
     num_2 = Kernel.rand(1..20)
     num_3 = Kernel.rand(1..20)
@@ -15,7 +15,7 @@ class Application
     else
       resp.write "You Lose"
     end
-
+    puts "text..........."
     resp.finish
   end
 
